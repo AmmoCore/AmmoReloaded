@@ -1,5 +1,5 @@
 
-AMMOREWARDS
+Ammo Reloaded
 
 Ticker: AMMO
 
