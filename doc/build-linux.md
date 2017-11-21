@@ -3,7 +3,7 @@ If you prefer to compile your own binary files, then you need the developer pack
 
 <b>Ubuntu / Debian:</b>
  
- 	sudo apt-get install git qt4-qmake libqt4-dev build-essential libboost-dev 	libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev libssl-dev libdb ++ - dev libqrencode-dev
+ 	sudo apt-get install git qt4-qmake libqt4-dev build-essential libboost-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev libssl-dev libdb++-dev libqrencode-dev
 
 If you have an error installing qt4-qmake (Arises on Ubuntu 14.04.2 and possibly in other versions)
 
