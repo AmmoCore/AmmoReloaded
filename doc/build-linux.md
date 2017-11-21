@@ -3,7 +3,7 @@ If you prefer to compile your own binary files, then you need the developer pack
 
 <b>Ubuntu / Debian:</b>
  
- 	sudo apt-get install git qt4-qmake libqt4-dev build-essential libboost-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev libssl-dev libdb++-dev libqrencode-dev
+ 	sudo apt-get install git qt4-qmake libqt4-dev build-essential libboost-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev libssl-dev libdb++-dev libqrencode-dev libminiupnpc-dev
 
 If you have an error installing qt4-qmake (Arises on Ubuntu 14.04.2 and possibly in other versions)
 
@@ -31,6 +31,7 @@ and finally, compile your client.
 <b>Note: for all of the 'make' commands below, it is recommended to speed things up by using the '-j' option followed by the number of cores on your processor. This enables multi-threading. Example:</b>
 
 	make -j4 #4 core processor, utilizes the whole processor and takes much less time to compile
+
 
 	cd ammoreloaded/src/leveldb/
 	make clean
