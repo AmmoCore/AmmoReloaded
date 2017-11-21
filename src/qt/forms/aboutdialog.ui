@@ -91,7 +91,7 @@
         <cursorShape>IBeamCursor</cursorShape>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Copyright © 2009-2015 The Bitcoin developers&lt;br/&gt;Copyright © 2012-2016 The NovaCoin developers&lt;br/&gt;Copyright © 2017 The Ammo developers&lt;br/&gt;&lt;br/&gt;Website: &lt;a href=&quot;http://www.ammorewards.net&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://www.ammorewards.net&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Copyright © 2009-2015 The Bitcoin developers&lt;br/&gt;Copyright © 2012-2016 The NovaCoin developers&lt;br/&gt;Copyright © 2017 The Ammo developers&lt;br/&gt;&lt;br/&gt;Website: &lt;a href=&quot;http://www.ammoreloaded.io&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://www.ammoreloaded.io&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="textFormat">
         <enum>Qt::RichText</enum>
