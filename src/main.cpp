@@ -2480,7 +2480,7 @@ bool LoadBlockIndex(bool fAllowNew)
         if (!fAllowNew)
             return false;
 
-        const char* pszTimestamp = "AmmoReloaded Genesis Born May 7";
+        const char* pszTimestamp = "AmmoRewards Genesis Born May 7";
         CTransaction txNew;
         txNew.nTime = 1494167992;
         txNew.vin.resize(1);
