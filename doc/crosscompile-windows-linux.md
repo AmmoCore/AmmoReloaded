@@ -175,11 +175,11 @@ Change the `INCLUDEPATHS, LIBPATHS, LIBS` to:
 
 	INCLUDEPATHS= \
 	 -I"$(CURDIR)" \
-	 -I"/home/<ваше имя>/db-6.0.20/build_unix" \
+	 -I"/home/<your user>/db-6.0.20/build_unix" \
 	 
 	LIBPATHS= \
 	 -L"$(CURDIR)/leveldb" \
-	 -L"/home/<ваше имя>/db-6.0.20/build_unix" \
+	 -L"/home/<your user>/db-6.0.20/build_unix" \
 	
 	LIBS= \
 	  -l leveldb \
@@ -250,11 +250,22 @@ The following lines:
 
 Save the file.
 
+Now edit `src/rpcwallet.cpp`. On line 1895 and 1908, remove the `/* */` symbols.
+
 You should be all set to compile the coin daemon. Open the terminal and type:
 
 	cd /home/<your user>/ammoreloaded/src
 	export PATH=/home/<your user>/mxe/usr/bin:$PATH
 	make -jn CROSS=i686-w64-mingw32.static- -f makefile.mingw
+
+If you get an error about `leveldb::something` not being found, do the following:
+
+	cd src/leveldb
+	make clean
+	TARGET_OS=NATIVE_WINDOWS make CROSS=i686-w64-mingw32.static- libleveldb.a libmemenv.a
+	cd ..
+
+And repeat the `make` command from above.
 
 Now wait for the compile to finish. Once it's done, type:
 
