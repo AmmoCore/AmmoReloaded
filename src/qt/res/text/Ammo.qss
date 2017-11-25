@@ -1,12 +1,12 @@
 * {
-     background: #f9f9f9;
-     color: #272727;
+     background: #ffffff;
+     color: #000000;
      font-family: Verdana, Geneva, sans-serif;
 }
 
 QLabel
 {
-	background: #transparent;
+	background: rgba(0,0,0,0);
         color: #272727;
 }
 
@@ -63,7 +63,7 @@ QActionGroup
 QToolBar
 {
     border: none;
-    background: #f1f1f1;
+    background: #ffffff;
 	color: #000000;
 	min-height: 40px;
 	min-width: 142px;
@@ -98,13 +98,13 @@ QToolButton#addressBookButton, QToolButton#pasteButton, QToolButton#deleteButton
 QMenuBar
 {
     border-bottom: 1px solid #000000;
-    background: #ababab;
+    background: #ffffff;
 	color: #000000;
 }
 
 QMenuBar::item
 {
-    background: #ababab;
+    background: #ffffff;
 	color: #000000;
 }
 
@@ -415,10 +415,10 @@ background-color: #FFFFFF;
 QProgressBar
 {
     border: 1px solid #262626;
-    background-color: #000000;
+    background-color: #f0f0f0;
     border-radius: 2px;
     text-align: center;
-    color: #FFFFFF;
+    color: #000000;
 }
 
 progressBarLabel
@@ -429,7 +429,7 @@ progressBarLabel
 
 QProgressBar::chunk
 {
-    background-color: #272727;
+    background-color: #ababab;
     width: 2.15px;
     margin: 0.5px;
 }
