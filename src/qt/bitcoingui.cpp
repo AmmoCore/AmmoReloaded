@@ -285,10 +285,10 @@ void BitcoinGUI::createActions()
 	pioAction->setToolTip(tr("Visit the Official Ammo website"));
 	bitcointalkAction = new QAction(QIcon(":/icons/bitcointalk"), tr("&Bitcointalk Discussion"), this);
 	bitcointalkAction->setToolTip(tr("Visit the Bitcointalk Ammo discussion thread"));
-    twitterAction = new QAction(QIcon(":/icons/twitter"), tr("&@Ammoreloaded"), this);
+    twitterAction = new QAction(QIcon(":/icons/twitter"), tr("&@ReloadedAmmo"), this);
 	twitterAction->setToolTip(tr("Visit the Official Ammo Twitter"));	
-	chainAction = new QAction(QIcon(":/icons/explorer"), tr("&Ammo Slack"), this);
-	chainAction->setToolTip(tr("Join Ammo Slack"));	
+    chainAction = new QAction(QIcon(":/icons/explorer"), tr("&Ammo Discord"), this);
+    chainAction->setToolTip(tr("Join Ammo Discord"));
 	githubAction = new QAction(QIcon(":/icons/github"), tr("&Github"), this);
 	githubAction->setToolTip(tr("Visit the Official Ammo Github"));	
     aboutAction = new QAction(QIcon(":/icons/bitcoin"), tr("&About Ammo"), this);
@@ -604,12 +604,12 @@ void BitcoinGUI::bitcointalkClicked()
 
 void BitcoinGUI::twitterClicked()
 {
-    QDesktopServices::openUrl(QUrl("https://twitter.com/ammoreloaded"));
+    QDesktopServices::openUrl(QUrl("https://twitter.com/reloadedammo"));
 }
 
 void BitcoinGUI::chainClicked()
 {
-    QDesktopServices::openUrl(QUrl("http://www.ammoreloaded.io"));
+    QDesktopServices::openUrl(QUrl("https://discord.gg/33HVHCd"));
 }
 
 void BitcoinGUI::githubClicked()

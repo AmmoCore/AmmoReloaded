@@ -22,7 +22,7 @@ QToolTip
 
 QFrame#frame, QFrame#frame_2, QFrame#frameCoinControl, QFrame#SendCoinsEntry, QScrollArea, QTableView
 {
-    border: 0px solid #AAAAAA;
+    border: 0px solid #000000;
 }
 
 QStatusBar
@@ -31,7 +31,7 @@ QStatusBar
 	background-color: #FFFFFF;
 }
 
-QWidget
+/*QWidget
 {
     color: #262626;
     outline: none;
@@ -47,7 +47,7 @@ QWidget#treeWidget
 {
     color: #DBDBDB;
 }
-
+*/
 QLabel:disabled
 {
 	background: #FFFFFF;
@@ -62,16 +62,12 @@ QActionGroup
 
 QToolBar
 {
-    border: none;
-    background: #ffffff;
+	border: none;
+	background: #ffffff;
 	color: #000000;
 	min-height: 40px;
-	min-width: 142px;
-	
-	
+	min-width: 142px;	
 }
-
-
 
 QToolButton
 {
@@ -90,9 +86,15 @@ QToolButton:checked
         border: none;
 }
 
+
 QToolButton#addressBookButton, QToolButton#pasteButton, QToolButton#deleteButton
 {
 	background: #FFFFFF;
+	padding-top:0px;
+	width: 16px;
+	height: 16px;
+	padding-left: 1px;
+	padding-right: 1px;
 }
 
 QMenuBar
