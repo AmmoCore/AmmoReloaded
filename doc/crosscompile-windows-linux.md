@@ -175,11 +175,11 @@ Change the `INCLUDEPATHS, LIBPATHS, LIBS` to:
 
 	INCLUDEPATHS= \
 	 -I"$(CURDIR)" \
-	 -I"/home/<ваше имя>/db-6.0.20/build_unix" \
+	 -I"/home/<your user>/db-6.0.20/build_unix" \
 	 
 	LIBPATHS= \
 	 -L"$(CURDIR)/leveldb" \
-	 -L"/home/<ваше имя>/db-6.0.20/build_unix" \
+	 -L"/home/<your user>/db-6.0.20/build_unix" \
 	
 	LIBS= \
 	  -l leveldb \
@@ -249,6 +249,8 @@ The following lines:
 	CXX=$(CROSS)g++
 
 Save the file.
+
+Now edit `src/rpcwallet.cpp`. On line 1895 and 1908, remove the `/* */` symbols.
 
 You should be all set to compile the coin daemon. Open the terminal and type:
 
