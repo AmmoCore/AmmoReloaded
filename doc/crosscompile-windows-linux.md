@@ -12,7 +12,14 @@ Another thing - when building for MXE, I recommend using `make -jn` where N is t
 
 Open the terminal and type the following commands:
  
-	sudo apt-get install git bison cmake flex g++ gperf ruby scons libghc-zlib-dev  libghc-zlib-bindings-dev
+	sudo apt-get install git bison cmake flex g++ gperf ruby scons libghc-zlib-dev  libghc-zlib-bindings-dev \
+    autoconf automake autopoint bash bison bzip2 flex gettext\
+    git g++ gperf intltool libffi-dev libgdk-pixbuf2.0-dev \
+    libtool-bin libltdl-dev libssl-dev libxml-parser-perl make \
+    openssl p7zip-full patch perl pkg-config python ruby scons \
+    sed unzip wget xz-utils
+
+For other operating systems, install the dependencies on `mxe/docs/index.html#requirements`.
 
 ### 2) Installing MXE and dependencies
 
