@@ -258,6 +258,15 @@ You should be all set to compile the coin daemon. Open the terminal and type:
 	export PATH=/home/<your user>/mxe/usr/bin:$PATH
 	make -jn CROSS=i686-w64-mingw32.static- -f makefile.mingw
 
+If you get an error about `leveldb::something` not being found, do the following:
+
+	cd src/leveldb
+	make clean
+	TARGET_OS=NATIVE_WINDOWS make CROSS=i686-w64-mingw32.static- libleveldb.a libmemenv.a
+	cd ..
+
+And repeat the `make` command from above.
+
 Now wait for the compile to finish. Once it's done, type:
 
 	strip Ammod.exe
