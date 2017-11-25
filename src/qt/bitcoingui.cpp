@@ -1247,9 +1247,14 @@ void BitcoinGUI::updateStyle()
     QString qssPath = QString::fromStdString( GetDataDir().string() ) + "/Ammo.qss";
 
     QFile f( qssPath );
+    QFile file( qssPath );
 
-    if (!f.exists())
-        writeDefaultStyleSheet( qssPath );
+    //if (!f.exists())
+    //    writeDefaultStyleSheet( qssPath );
+    
+    //In order to fix the stylesheet not updating after wallet redesigns I'm adding the next line to update it every time.
+
+    writeDefaultStyleSheet( qssPath );
 
     if (!f.open(QFile::ReadOnly))
     {
