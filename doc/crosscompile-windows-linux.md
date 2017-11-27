@@ -367,11 +367,18 @@ to the end of the `INCPATH` line.
 
 
 After the compile is done, the binary file Ammo-qt.exe will be located in the `release` folder.
-Once again, do:
+If you want to reduce the size of binary files,
+1) Go to the website http://upx.sourceforge.net/#downloadupx
+2) Download the program according to your system
+3) Unpack the program in a folder with binary Novacoin files.
+4) Enter in the terminal
 
-	strip Ammo-qt.exe
+	./upx -9 Ammod.exe
+	
+then
 
-to reduce the size by ~90%.
-
+	./upx -9 Ammo-qt.exe
+	
+This will reduce the size by around 3 times.
 
 That's it! If you're having compile issues, please google them first and then open an issue here if you can't find the answer. I will help you as soon as possible.
